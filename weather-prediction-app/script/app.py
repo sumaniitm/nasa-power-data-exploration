@@ -43,7 +43,7 @@ for file in os.listdir(local_path):
 
 bucket_contents = s3_client.list_objects_v2(Bucket='nasa-power-combined-data')
 list_of_objs_in_bucket = bucket_contents['Contents']
-download_path_local_root = 's3_downloads'
+download_path_local_root = '/mnt/shared/s3_downloads'
 for i in range(len(list_of_objs_in_bucket)):
     print(list_of_objs_in_bucket[i]['Key'])
     download_path_local = "/".join([download_path_local_root, list_of_objs_in_bucket[i]['Key']])
