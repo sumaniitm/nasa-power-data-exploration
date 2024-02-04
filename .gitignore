@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# local data files
+weather-prediction-app/kolkata_901_daily_meteorology_utc_dask/
+weather-prediction-app/s3_downloads/
+
 # C extensions
 *.so
 
@@ -36,7 +40,7 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit s3_downloads / coverage reports
 htmlcov/
 .tox/
 .nox/
